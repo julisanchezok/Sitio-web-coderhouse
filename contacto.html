@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cont.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/cont.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Noto+Serif+Ahom&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="barradenav">
+            <div class="logo">
+            <a href="#">
+                <img src="./images/logonav.jpeg" alt="la estación del fitness" >
+            </a>
+            </div>  
+            <ul class="menu">
                 <li><a href="inicio.html">Inicio </a>  </li>
                 <li><a href="sobrenosotros.html">Sobre Nosotros </a>  </li>
-                <li><a href="galeria.html">Galeria</a>  </li>
+                <li><a href="horarios.html">Horarios</a>  </li>
                 <li><a href="faq.html">Preguntas frecuentes </a>  </li>
                 <li><a href="contacto.html">Contacto </a> </li>
-            </ul>
+            </ull>
         </nav>
-    </header>
+        </header>
+    <div class="conteiner">  
     <h1> Contacto </h1>
-    <div>
-        <fieldset>
+    <div class="formulario">
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6556.7148185387205!2d-58.2919120651123!3d-34.746588499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d96494617e9%3A0x972786e48674038!2sLa%20Estacion%20del%20Fitness!5e0!3m2!1ses!2sar!4v1675052653808!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <fieldset class="cuadro">
             <form>
                 <label> Nombre y Apellido </label>
                 <br />
@@ -41,14 +54,13 @@
             </form>
             <input type="submit" id="boton">
         </fieldset>
+        <div class="ubi">
+            <h3> Tambien podes acercarte a </h3>
+            <p> Av Calchaqui 2980, Quilmes, Buenos Aires</p>
+        </div>
     </div>
-    <div>
-        <h3> Tambien podes acercarte a </h3>
-        <p> Av Calchaqui 2980, Quilmes, Buenos Aires</p>
-    </div>
-    <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6556.7148185387205!2d-58.2919120651123!3d-34.746588499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d96494617e9%3A0x972786e48674038!2sLa%20Estacion%20del%20Fitness!5e0!3m2!1ses!2sar!4v1675052653808!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    
+ </div>  
     <footer>
         <p> Website developed by Julieta Sanchez </p>
     </footer>

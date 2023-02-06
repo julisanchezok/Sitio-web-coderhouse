@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Noto Serif Ahom', serif;
+
+}
+
+
+header{
+    display: inline-block;
+    width: 100%;
+    margin: 15px;
+}
+.barradenav .menu{
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    bottom: 50%;
+
+}
+
+.barradenav{
+    display: inline-block;
+    margin: 8px;
+    padding: 5px;
+    width: 100%;
+    height: 63px; 
+    box-sizing: border-box;
+}
+
+.barradenav .logo{
+    width: 10%;
+    height: 90%;
+}
+.logo{
+    display: inline-block;
+    
+    position: relative;
+    bottom: 10px;
+}
+   
+  
+.logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+}  
+
+.menu{
+    width: 86%;
+   
+}
+
+ul li {
+    list-style-type: none;
+    color: white;
+    display: inline-block;
+    font-size: 15px; 
+    padding: 6px;
+    margin-top: 30px;
+    border-right: 1px;
+    border-right-style: ridge;
+    border-color: white;
+    padding-right: 15px;
+
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.cuadro {
+    background-color: rgb(252, 252, 35);
+    color: black;
+    height: 400px;
+    width: 500px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+ 
+   
+    
+}
+
+form{
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+textarea{
+    height: 100px;
+    width: 500px;
+}
+ 
+input{
+    height: 30px;
+    width: 500px;
+}
+
+#boton{
+    height: 30px;;
+    width: 70px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(13, 15, 8);
+}
+
+#boton:hover{
+    background-color: darkgray;
+}
+
+.formulario .mapa{
+    float: right;
+}
+.conteiner{
+    margin: 15px;
+    padding: 10px;
+    margin-top: 6px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.conteiner h1{
+    font-family: 'Merriweather', serif;
+
+}
+footer{
+    padding: 35px;
+    margin: 8px;
+    text-align: center;
+}
+
+.formulario .ubi{
+    
+   text-align: right;
+}
+
+
