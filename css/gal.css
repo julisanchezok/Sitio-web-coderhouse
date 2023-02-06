@@ -95,3 +95,30 @@ footer{
     font-family: 'Merriweather', serif;
 
 }
+
+.tablahora{
+    width: 100%;
+    margin: 15px;
+    padding: 10px;
+    margin-left: 90px;
+}
+
+tr:nth-child(even){
+    border-collapse: collapse;
+}
+
+ th {
+    padding-right: 152px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    color: black;
+    background-color: yellow;
+}
+
+td{
+    padding-top: 20px;
+    border: 1px solid white;
+    
+}
+
