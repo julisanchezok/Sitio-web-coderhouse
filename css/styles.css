@@ -668,7 +668,8 @@ input{
 /** ACTIVIDADES**/
 .grid{
     grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 15%);
+    grid-template-rows: repeat(9, 13%);
+    grid-gap: 0px;
 }
 
 
