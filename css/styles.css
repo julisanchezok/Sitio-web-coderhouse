@@ -148,7 +148,7 @@ a{
 
 .frase{
     display: flex;
-    width: 100%;
+    width: 102%;
     height: 200px;
     
     background-color: rgb(218, 218, 218);
@@ -496,21 +496,34 @@ footer img{
 
 
 .titusab{
-    width: 50%;
+    width: 100%;
     background-color: yellow;
     color: black;
 }
 .cajasab{
     background-color: rgb(255, 254, 254);
     color: black;
-    width: 50%;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
 }
 .share{
     margin-top: 30px;
-    font-size: 20px; 
+    font-size: 40px; 
 }
+
+.contenedor {
+    background: url('../images/share.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 90vh;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 3px 3px 3px #000 ;
+  }
+
 
 /***** HORARIOS ****/
 .gridarea{
@@ -689,6 +702,24 @@ input{
         width: auto;
     }
 
+ /*****SOBRE NOSOTROS********/
+    .sn{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .sobrenos{
+        width: auto;
+        text-align: center;
+    }
+    .imagencont{
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+    }
+
+
+
+
     /** ACTIVIDADES**/
     .grid {
         grid-template-columns: 11fr;
@@ -745,7 +776,6 @@ input{
 
     .redes {
         grid-area: social;
-        justify-content: start;
     }
 
     .logos li {
@@ -773,8 +803,15 @@ input{
 
    }
    .menu li {
-
+    font-size: 12px;
+    margin-top: 8px;
      display: block;
      justify-content: start;   
+   }
+
+
+   /*****SOBRE NOSOTROS***/
+   .cajasab{
+    text-align: center;
    }
 }
