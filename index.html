@@ -4,35 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Noto+Serif+Ahom&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <title>Inicio</title>
+    <title> Inicio | La Estación del Fitness </title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./styles/css/styles.css" type="text/css"/>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
+<meta name="description" content="Información del gimnasio La Estación del Fitness">
+<meta name="keywords" content="GIMNASIO, QUILMES, SALUD, INFORMACIÓN, CUOTAS, ACTIVIDADES, HORARIOS">
 
 </head>
 <body>
     <header>
-        <a href="#">
-            <img class="logo" src="./images/logonav.jpeg" alt="la estación del fitness" >
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+          <span class="navbar-toggler-icon custom-toggler"></span>
+        </button>
+        
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./images/logonav.jpeg" width="150px" height="80px"> 
         </a>
-        <nav class="barradenav">  
-            <ul class="menu">
-                <li><a href="index.html">Inicio </a>  </li>
-                <li><a href="./pages/sobrenosotros.html">Sobre Nosotros </a>  </li>
-                <li><a href="./pages/horarios.html">Actividades</a>  </li>
-                <li><a href="./pages/faq.html">Preguntas frecuentes </a>  </li>
-                <li><a href="./pages/contacto.html">Contacto </a> </li>
-            </ul>
-        </nav>
+        
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="opciones">   
+          <ul class="navbar-nav menu">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"> Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/horarios.html">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/faq.html">Preguntas frecuentes</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>            
+          </ul>
+        </div>
+      </nav>
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
     </header>
-
+     
     <!--seccion 1  presentacion-->
     <main class="primerinicio">
-        <div id="titulo">
+        <div id="titulo" class="centered">
             <h1> La Estación del Fitness </h1>
             <p> Gimnasio, social y bienestar.</p>
             <button class="asociate"> Asociate </button>
@@ -49,10 +74,10 @@
     </section>
 
 
-    <section class="conteiner planes">
+    <article class="conteiner planes">
         
         <div class="row justify-content-around text-center">
-            <h2 class="pb-4" style="color: white;"> Elegi tu plan </h2>
+            <h2 class="pb-4 pt-2" style="color: white;"> Elegi tu plan </h2>
             <div class=" p-0  pb-3 col-md-3 col-10 plan">
                 <h3 class="color-cont pt-3"  > Plan Mensual </h3>
                 <h2 class="price price1"> $5.600</h2> 
@@ -113,7 +138,7 @@
             </div> 
             </div>
         </div>
-    </section>
+    </article>
 
 
     <!-- Sección 4, ubicacion-->
