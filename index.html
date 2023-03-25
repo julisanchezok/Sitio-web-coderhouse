@@ -57,19 +57,19 @@
      
     <!--seccion 1  presentacion-->
     <main class="primerinicio">
-        <div id="titulo" class="centered">
+        <div id="titulo" class="centered fade-in is-inViewport" data-transition="fade-in-up">
             <h1> La Estación del Fitness </h1>
             <p> Gimnasio, social y bienestar.</p>
             <button class="asociate"> Asociate </button>
         </div>
         <div class="imageninic">
-            <img src="./images/ftini.jpeg" alt="foto del Gimnasio por fuera">
+            <img class="fade-in is-inViewport" data-transition="fade-in-up" src="./images/ftini.jpeg" alt="foto del Gimnasio por fuera">
         </div>
     </main>
 
     <!--seccion 2, frase -->
     <section class="frase">
-        <h2 class="textfrase"> Este <span class="yellow"> lugar </span> te <span class="yellow">cambiará </span> si se lo
+        <h2 class="textfrase is-inViewport" data-transition="fade-in-up"> Este <span class="yellow"> lugar </span> te <span class="yellow">cambiará </span> si se lo
             permites </h2>
     </section>
 
@@ -189,6 +189,24 @@
                 </ul>
             </div>
         </footer>
+
+        <script>
+            const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+        entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+        });
+    };
+
+    const Obs = new IntersectionObserver(inViewport);
+    const obsOptions = {}; //See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+    // Attach observer to every [data-transition] element:
+    const ELs_inViewport = document.querySelectorAll('[data-transition]');
+    ELs_inViewport.forEach(EL => {
+        Obs.observe(EL, obsOptions);
+    });
+
+        </script>
 
 </body>    
 </html>
