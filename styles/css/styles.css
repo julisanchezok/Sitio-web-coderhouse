@@ -160,6 +160,9 @@ a {
   height: 580px;
   color: black;
 }
+.white{
+  color: white;
+}
 
 .color-cont {
   background-color: #c0c0c0;
@@ -227,10 +230,9 @@ a {
   color: black;
 }
 
-.ubicacion h1 {
+.ubicacion h3 {
   display: flex;
-  align-self: flex-start;
-  justify-self: center;
+  align-self: center;
 }
 
 .contmap {
@@ -261,11 +263,6 @@ a {
   text-align: center;
 }
 
-.textubi h1 {
-  font-family: "Merriweather", serif;
-  align-self: center;
-  padding-top: 15px;
-}
 
 /********* Parte de Footer****************/
 footer {
@@ -317,7 +314,7 @@ footer img {
   flex-direction: row;
 }
 
-.redes .logos {
+.redes {
   list-style-type: none;
 }
 
@@ -358,7 +355,6 @@ footer img {
 
 .sobrenos {
   width: 50%;
-  height: 90%;
   font-weight: 700;
 }
 
@@ -398,6 +394,7 @@ footer img {
 .share {
   margin-top: 30px;
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 .contenedor {
