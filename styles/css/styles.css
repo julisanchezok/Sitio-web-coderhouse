@@ -81,6 +81,9 @@ header {
 
 .navbar {
   width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
 }
 
 .menu li {
@@ -294,9 +297,9 @@ a {
   justify-content: space-around;
   flex-direction: column;
   font-size: 1.5rem;
+  text-align: center;
   width: 50%;
   height: 80% px;
-  text-align: center;
 }
 
 .textubi h1 {
@@ -378,10 +381,10 @@ footer img {
   width: 100%;
   font-family: "Merriweather", serif;
   font-size: 41px;
+  text-align: center;
   background-color: yellow;
   color: #000;
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 120px;
   height: 90px;
 }
 
@@ -573,14 +576,17 @@ input[type=checkbox] {
 }
 
 .formulario {
-  text-align: left;
   font-size: 18px;
+  text-align: left;
   padding: 10px;
 }
 
 form {
   position: relative;
   display: block;
+}
+form-label {
+  padding: 5px;
 }
 
 textarea {
@@ -717,8 +723,8 @@ input {
     flex-wrap: wrap;
   }
   .sobrenos {
-    text-align: center;
     font-size: 17px;
+    text-align: center;
   }
   .imagencont {
     width: auto;
