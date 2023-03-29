@@ -1,0 +1,70 @@
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color: $main_color;
+    border-top: 1px solid $accent;
+    grid-template-columns: 30% 40% 30%;
+    
+    img {
+        max-width: 200px;
+    }
+}
+.imgb {
+    height: 100%;
+    @extend .centered;
+
+}
+
+
+
+.horario {
+    @extend .centered;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 25px;
+    text-align: center;
+    border-left: 2px solid $accent;
+    border-right: 2px solid $accent;
+}
+
+.titulohora {
+    font-weight: 900;
+    letter-spacing: 14px;
+    font-size: 20px;
+    text-transform: capitalize;
+    align-self: center;
+}
+
+.bold {
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.timing {
+    font-size: 18px;
+    margin-top: 1px;
+}
+
+.redes {
+    @extend .centered;
+    flex-direction: row;
+    .logos {
+        @extend .centered;
+        list-style-type: none;
+    
+    }
+}
+
+.logos{
+    img {
+        width: 100%;
+        padding: 10px;
+        max-width: 80px;
+    } 
+    li {
+        margin: 0px 10px 0px 10px;
+    }  
+}
