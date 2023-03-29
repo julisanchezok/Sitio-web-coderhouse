@@ -6,6 +6,13 @@
 }
 
 $accent: yellow;
+$main_color: #000;
+
+ul{
+    li{
+        list-style: none;
+    }
+}
 
 .centered {
     display: flex;
@@ -13,6 +20,46 @@ $accent: yellow;
     justify-content: center;
 }
 
+.ubicacion {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+    color: $main_color;
+  
+   h3 {
+    display: flex;
+    align-self: center;
+  }
+  
+  .contmap {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(218, 218, 218);
+    color: $main_color;
+  }
+  
+  .contmap object {
+    padding-bottom: 15px;
+  }
+  
+  .mapa {
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 3px darkgray;
+    margin-bottom: 40px;
+  }
+  
+  .textubi {
+    align-items: end;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+}
 
 body {
     background-color: #000;
@@ -87,9 +134,8 @@ a {
     justify-content: space-evenly;
     width: 100%;
     flex-direction: row;
-    height: 529px;
     margin-bottom: 26px;
-
+    flex-wrap: wrap;
     
 }
 
@@ -110,7 +156,6 @@ a {
     @extend .centered;
     flex-direction: column;
     justify-items: center;
-    width: 30%;
     padding-top: 60px;
     height: 80%;
     text-align: center;
@@ -156,7 +201,7 @@ a {
     width: 100%;
     height: 200px;
     background-color: rgb(218, 218, 218);
-    color: black;
+    color: $main_color;
     text-align: center;
 
 }
@@ -165,23 +210,22 @@ a {
     font-size: 3rem;
     font-family: 'Noto Serif Ahom', serif;
     font-weight: 600;
-    left: 37px;
-    position: relative;
 }
 
 .yellow {
     color: $accent;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 1px $main_color;
 
 }
-
+.white{
+    color: white;
+}
 
 
 
 /* PLANES */
 .planes {
-    height: 580px;
-    color: black;
+    color: $main_color;
 
 }
 
@@ -190,7 +234,7 @@ a {
     width: 100%;
     padding: 15px;
     z-index: 1;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid $main_color;
 }
 
 .plan {
@@ -254,10 +298,9 @@ a {
     @extend .centered;
     width: 100%;
     flex-wrap: wrap;
-    height: 600px;
     text-align: center;
     background-color: rgb(218, 218, 218);
-    color: black;
+    color: $main_color;
 }
 
 
@@ -274,7 +317,7 @@ a {
     width: 100%;
     text-align: center;
     background-color: rgb(218, 218, 218);
-    color: black;
+    color: $main_color;
 }
 
 .contmap object {
@@ -315,7 +358,7 @@ footer {
     grid-template-columns: 1fr 2fr 1fr;
     ;
     align-items: center;
-    background-color: black;
+    background-color: $main_color;
     border-top: 1px solid $accent;
     grid-template-columns: 30% 40% 30%;
 }
@@ -411,16 +454,11 @@ footer img {
 
 
 .sn {
-
-    height: 500px;
     width: 100%;
     @extend .centered;
 }
 
 .sobrenos {
-
-    width: 50%;
-    height: 90%;
     font-weight: 700;
 }
 
@@ -430,8 +468,6 @@ footer img {
 }
 
 .imagencont {
-    width: 41%;
-    height: 90%;
     align-self: flex-start;
     margin-left: 40px;
     max-width: 500px;
@@ -447,13 +483,13 @@ footer img {
 .titusab {
     width: 100%;
     background-color: yellow;
-    color: black;
+    color: $main_color;
     padding: 15px;
 }
 
 .cajasab {
     background-color: rgb(255, 254, 254);
-    color: black;
+    color: $main_color;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -513,6 +549,11 @@ footer img {
 
 
 /**** PREGUNTAS FRECUENTES***/
+
+.here{
+        color: yellow;
+        text-decoration: underline;
+}
 .video-responsive {
     height: 31.5vw;
     width: 56vw;
@@ -524,6 +565,7 @@ footer img {
         height: 50vw;
         width: 88vw;
     }
+
 }
 
 input[type='checkbox'] {
@@ -657,6 +699,62 @@ input {
 }
 
 /* MEDIA QUERIES SIZES*/
+
+@media  (max-width: 768px) {
+    .menu li{
+    padding-right: 0px; 
+    padding-left: 0px; 
+    }
+    .navbar-brand img{
+    max-width: 80px;
+    height: auto;
+    }
+    
+    .imageninic img {
+        height: auto;
+        max-width: 300px;
+    }
+   
+}
+
+@media screen and (min-width: 768px) and (max-width:992px ){
+ .menu li{
+        font-size: 13px;
+        margin-right: 0px;
+    }  
+    .sobrenos{
+        text-align: center;
+    }
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width: 576px) and (max-width:768px ){
+    .menu li{
+        font-size: 13px;
+        margin-right: 0px;
+    }
+    .logos img{
+        padding: 0px;
+    }
+    .textfrase{
+        font-size: 2.5rem;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .imageninic img{
+        max-width: 500px;
+    }
+    .plan{
+        margin: 30px;
+    }
+}
+
 @media (max-width:576px) {
 
     /** INICIO **/
@@ -669,6 +767,7 @@ input {
     .primerinicio {
         gap: 25px;
         flex-direction: column;
+
     }
 
     #titulo {
@@ -711,16 +810,21 @@ input {
 
     .textubi {
         width: auto;
+        font-size: 14px!important;
     }
-
+     
+    object{
+        width: 25px;
+    }
+    
     /*****SOBRE NOSOTROS********/
+
     .sn {
         height: auto;
         flex-wrap: wrap;
     }
 
     .sobrenos {
-        width: auto;
         text-align: center;
         font-size: 17px;
     }
@@ -729,6 +833,7 @@ input {
         width: auto;
         height: auto;
         margin-left: 0px;
+        max-width: 278px;
     }
 
 
@@ -757,7 +862,7 @@ input {
             "logo   logo   horarios "
             "social social  social  "
         ;
-        grid-template-columns: 20% 17%;
+        grid-template-columns: 1fr 1fr;
     }
 
     .horario {
@@ -807,11 +912,11 @@ input {
     /**BARRA DE NAV */
 
     .menu li {
-        border: 0px;
         font-size: 12px;
         margin-top: 8px;
         display: block;
         justify-content: start;
+        margin-right: 0px;
     }
 
     .navbar-brand img {
