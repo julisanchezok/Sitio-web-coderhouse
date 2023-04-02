@@ -77,6 +77,7 @@ share
 /********* Parte de nav ****************/
 header {
   display: flex;
+  align-items: flex-start;
 }
 
 .navbar {
@@ -84,6 +85,7 @@ header {
   background-color: black;
   position: fixed;
   z-index: 1000;
+  top: 0px;
 }
 
 .menu li {
@@ -106,6 +108,7 @@ header {
 
 .navbar-collapse {
   justify-content: end;
+  padding: 20px;
 }
 
 a {
@@ -162,8 +165,8 @@ a {
 
 #titulo button {
   background-color: yellow;
-  border: 2px;
-  border-style: solid;
+  border: 2px solid #000;
+  color: #000;
   font-size: 1rem;
   width: 200px;
   height: 60px;
@@ -670,6 +673,9 @@ input {
   }
 }
 @media (max-width: 576px) {
+  .menu li {
+    border: 0px;
+  }
   /** INICIO **/
   .imageninic img {
     width: 244px;
